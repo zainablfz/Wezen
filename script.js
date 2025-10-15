@@ -15,10 +15,10 @@
     };
 
     const images = {
-        "Mars": "my_images/mars.png",
-        "Snickers": "my_images/snickers.png",
-        "Milkyway": "my_images/milkyway.png",
-        "Neutral": "my_images/neutraal.png"
+        "Mars": "my_images/Happy.png",
+        "Snickers": "my_images/Happy.png",
+        "Milkyway": "my_images/Dancing.png",
+        "Neutral": "my_images/Default.png"
     };
 
     // ---
