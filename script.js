@@ -8,16 +8,16 @@
 
     // Hier kun je jouw classes aan geluiden en afbeeldingen koppelen
 
-    const sounds = {
-        "Mars": new Audio("my_sounds/mars.mp3"),
-        "Snickers": new Audio("my_sounds/snickers.mp3"),
-        "Milkyway": new Audio("my_sounds/milkyway.mp3")
-    };
+    // const sounds = {
+    //     "Mars": new Audio("my_sounds/mars.mp3"),
+    //     "Snickers": new Audio("my_sounds/snickers.mp3"),
+    //     "Milkyway": new Audio("my_sounds/milkyway.mp3")
+    // };
 
     const images = {
-        "Mars": "my_images/Happy.png",
-        "Snickers": "my_images/Happy.png",
-        "Milkyway": "my_images/Dancing.png",
+        "Happy": "my_images/Happy.png",
+        "Music": "my_images/Happy.png",
+        "Golden": "my_images/Dancing.png",
         "Neutral": "my_images/Default.png"
     };
 
@@ -40,7 +40,7 @@
     let lastNeutralTime = 0;
 
     const imageDiv = document.getElementById("image-display");
-    imageDiv.innerHTML = `<img src="${images["Neutral"]}" alt="Neutral">`;
+    imageDiv.innerHTML = `<img src="${images["Default"]}" alt="Default">`;
 
     try {
         webcam = new tmImage.Webcam(400, 300, true, { facingMode: "user" });
