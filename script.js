@@ -16,12 +16,11 @@
 
     const images = {
         "Happy": "my_images/Happy.png",
-        "Music": "my_images/Happy.png",
-        "Golden": "my_images/Dancing.png",
-        "Neutral": "my_images/Default.png"
+        "Singing": "my_images/Singing.png",
+        "Dancing": "my_images/Dancing.png",
+        "Default": "my_images/Default.png"
     };
 
-    // ---
 
     let model = null, webcam = null;
     const confidenceThreshold = 0.9; 
@@ -90,7 +89,7 @@
             if (avgProb < confidenceThreshold) {
                 if (!currentDetectedClass || now - lastNeutralTime > neutralHoldDuration) {
                     document.getElementById("prediction").innerText = "No detection";
-                    imageDiv.innerHTML = `<img src="${images["Neutral"]}" alt="Neutral">`;
+                    imageDiv.innerHTML = `<img src="${images["Default"]}" alt="Default">`;
                     currentDetectedClass = null;
                     lastNeutralTime = now;
                 }
