@@ -8,11 +8,11 @@
 
     // Hier kun je jouw classes aan geluiden en afbeeldingen koppelen
 
-    // const sounds = {
-    //     "Mars": new Audio("my_sounds/mars.mp3"),
-    //     "Snickers": new Audio("my_sounds/snickers.mp3"),
-    //     "Milkyway": new Audio("my_sounds/milkyway.mp3")
-    // };
+    const sounds = {
+        "Dancing": new Audio("my_sounds/Dancing.mp3"),
+        "Happy": new Audio("my_sounds/Happy.mp3"),
+        "Singing": new Audio("my_sounds/Singing.mp3")
+    };
 
     const images = {
         "Happy": "my_images/Happy.png",
@@ -23,9 +23,9 @@
 
 
     let model = null, webcam = null;
-    const confidenceThreshold = 0.9; 
-    const maxThreshold = 1.0;        
-    const holdTime = 2000;            
+    const confidenceThreshold = 0.2; 
+    const maxThreshold = 0.6;        
+    const holdTime = 0;            
     const cooldown = 4000;            
     const bufferSize = 5;             
     const displayHoldDuration = 5000; 
