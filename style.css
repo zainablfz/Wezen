@@ -54,6 +54,6 @@ h1 {
 
 .gestures {
   display: flex;
-  transform: scale(3);
+  transform: scale(4);
   padding-top: 5em;
 }
