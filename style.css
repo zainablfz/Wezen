@@ -51,3 +51,9 @@ h1 {
   z-index: 1000;
   padding: 10px 0;
 }
+
+.gestures {
+  display: flex;
+  transform: scale(3);
+  padding-top: 5em;
+}
